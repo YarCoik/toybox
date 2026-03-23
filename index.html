@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>[ TOY BOX ] — 40 Interactive Experiments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div id="hub">
+    <header class="hub-hero">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>40 Interactive Browser Experiments</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-bracket">[</span><span class="hero-word">TOY&nbsp;BOX</span><span class="hero-bracket hero-bracket-r">]</span>
+      </h1>
+      <p class="hero-sub">Physics &nbsp;·&nbsp; Audio &nbsp;·&nbsp; Math &nbsp;·&nbsp; Simulate &nbsp;·&nbsp; Draw &nbsp;·&nbsp; Retro OS</p>
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v10M3 8l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </header>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-tag="All">All <span class="filter-count" id="filter-total">40</span></button>
+      <button class="filter-btn" data-tag="Physics">⚡ Physics</button>
+      <button class="filter-btn" data-tag="Audio">🔊 Audio</button>
+      <button class="filter-btn" data-tag="Draw">✏️ Draw</button>
+      <button class="filter-btn" data-tag="Math">📐 Math</button>
+      <button class="filter-btn" data-tag="Simulate">🔬 Simulate</button>
+      <button class="filter-btn" data-tag="Puzzle">🧩 Puzzle</button>
+      <button class="filter-btn" data-tag="Toy">🎮 Toy</button>
+      <button class="filter-btn" data-tag="OS">💾 OS</button>
+    </div>
+
+    <main class="hub-grid" id="hg"></main>
+
+    <footer class="hub-foot">
+      <div class="foot-inner">
+        <span class="foot-logo">[TB]</span>
+        <span>Vanilla JS &nbsp;·&nbsp; Canvas API &nbsp;·&nbsp; Web Audio &nbsp;·&nbsp; Spring Physics &nbsp;·&nbsp; Cellular Automata &nbsp;·&nbsp; No frameworks</span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="overlay">
+    <div id="overlay-bar">
+      <button id="back-btn">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Hub
+      </button>
+    </div>
+    <div id="gc"></div>
+  </div>
+
+  <canvas id="tc"></canvas>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
